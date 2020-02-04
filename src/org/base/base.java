@@ -27,9 +27,9 @@ public class BaseClass {
 		Select s = new Select(w);
 		s.selectByVisibleText(st);
 	}
-	public void alert() {
-		Alert a = Hooks.driver.switchTo().alert();
-		a.accept();
+	public void alert(WebElement w) {
+		Robot r = new Robot(driver);
+		
 		
 	}
 	public void scroll(WebElement w) {
